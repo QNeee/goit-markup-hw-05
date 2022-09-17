@@ -54,7 +54,12 @@ ul {
   display: flex;
   margin-left: 93px;
 }
-
+.nav-item {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .contact-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -514,4 +519,14 @@ ul {
 }
 .current {
   color: var(--accent-color);
+}
+
+.current::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  width: 100%;
+  display: block;
+  height: 4px;
+  background-color: var(--accent-color);
 }
