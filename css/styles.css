@@ -410,6 +410,7 @@ ul {
 }
 
 /* projects */
+\
 .projects {
   align-items: center;
   display: flex;
@@ -550,7 +551,7 @@ ul {
   outline: 1px solid tomato;
 }
 .backdrop.is-hidden .modal {
-  transform: scale(2);
+  transform: scale(4);
 }
 .modal {
   position: relative;
