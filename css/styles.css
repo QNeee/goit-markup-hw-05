@@ -560,8 +560,9 @@ ul {
   top: 100%;
   width: 100%;
   display: block;
-  height: 4px;
+  height: 3px;
   background-color: var(--accent-color);
+  border-radius: 3px;
 }
 /* modal */
 .backdrop {
@@ -573,7 +574,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
-  transition: opacity var(--wait) var(--caubic);
+  transition: opacity var(--wait) var(--caubic), visibility var(--wait) var(--caubic);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -581,7 +582,7 @@ ul {
   outline: 1px solid tomato;
 }
 .backdrop.is-hidden .modal {
-  transform: scale(4);
+  transform: scale(2);
 }
 .modal {
   position: relative;
