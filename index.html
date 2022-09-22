@@ -415,11 +415,15 @@
           <ul class="form-list">
             <li class="lst">
               <label class="form-label" for="name">Имя</label>
-              <p class="label-p"><input class="inputs" type="text" name="name" id="name" /></p>
+              <p class="label-p">
+                <input class="inputs test" type="text" name="name" id="name" />
+              </p>
             </li>
             <li class="lst">
               <label class="form-label" for="tel">Телефон</label>
-              <p class="label-p"><input class="inputs" type="tel" name="tel" id="tel" /></p>
+              <p class="label-p">
+                <input class="inputs" type="tel" name="tel" id="tel" />
+              </p>
             </li>
             <li class="lst">
               <label class="form-label" for="mail">Пошта</label>
@@ -429,21 +433,21 @@
               <label class="form-label comments" for="comments">Коментар</label>
               <p class="label-p">
                 <textarea
-                  class="inputs comments"
+                  class="inputs comments comments-text"
                   name="comments"
                   id="comments"
                   placeholder="Введіть текст"
                 ></textarea>
               </p>
             </li>
-            <li class="lst policy">
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy"
-                >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label
-              >
-            </li>
           </ul>
-          <button class="hero-button" type="submit">Відправити</button>
+          <div class="button-policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label class="policy" for="policy"
+              >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label
+            >
+            <button class="hero-button submit-button" type="submit">Відправити</button>
+          </div>
         </form>
       </div>
     </div>

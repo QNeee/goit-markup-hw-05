@@ -612,7 +612,7 @@ ul {
 
 .form-teg {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -626,8 +626,11 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.01em;
 }
-.form-list .lst {
-  margin-bottom: 28px;
+.form-list .lst:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form-list .lst:last-child {
+  margin-bottom: 20px;
 }
 .label-p {
   padding-left: 40px;
@@ -638,13 +641,32 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.policy {
-  align-items: center;
-  text-align: center;
-}
+
 .comments {
   height: 120px;
 }
+.comments-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.submit-button {
+  margin-top: 30px;
+}
+.policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.button-policy {
+  text-align: center;
+}
+
 textarea {
   resize: none;
 }
