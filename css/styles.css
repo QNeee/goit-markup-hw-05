@@ -620,11 +620,16 @@ ul {
   letter-spacing: 0.03em;
 }
 .form-label {
+  position: relative;
   padding-left: 40px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.01em;
+}
+.modal-icons {
+  position: absolute;
+  margin: 14px;
 }
 .form-list .lst:not(:last-child) {
   margin-bottom: 10px;
