@@ -195,7 +195,7 @@ ul {
   background-color: var(--accent-color);
   color: var(--filter-secondarycolor);
   cursor: pointer;
-  transition: color var(--wait) var(--caubic);
+  transition: background-color var(--wait) var(--caubic), color var(--wait) var(--caubic);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -411,7 +411,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: color var(--wait) var(--caubic);
+  transition: background-color var(--wait) var(--caubic), color var(--wait) var(--caubic),
+    box-shadow var(--wait) var(--caubic);
 }
 .btns:hover,
 .btns:focus {
@@ -482,7 +483,7 @@ ul {
 .projects .lst {
   display: block;
   margin-bottom: 30px;
-  transition: color var(--wait) var(--caubic);
+  transition: color var(--wait) var(--caubic), box-shadow var(--wait) var(--caubic);
 }
 
 .projects .lst:nth-child(3n + 3) {
